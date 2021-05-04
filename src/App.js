@@ -2,6 +2,8 @@ import styled from "styled-components";
 import dancing from "./dancing.jpg";
 
 const Bordy = styled.img`
+  display: flex;
+  width: 100px;
   border: 12px solid black;
   border-radius: 9px;
 `;
@@ -31,9 +33,11 @@ const Item = styled.div`
 `;
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 150px 50px 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   grid-gap: 5px;
+  grid-template-areas: auto;
+  justify-content: space-around;
 `;
 
 function App() {
@@ -48,7 +52,13 @@ function App() {
         <Sup>Art</Sup>
       </Item>
       <Item>5</Item>
-      <Item>6</Item>
+      <Item>
+        <Sup>
+          Hey there! I am Adam Aslan. Much of my work is influenced by words.
+          Words to me are sculptures in their own right as boxes that you can
+          put things into, build upon, and sculpt into objects.{" "}
+        </Sup>
+      </Item>
       <Item>7</Item>
       <Item>
         <Supsup>The Coalescence of Love and Virtue</Supsup>
