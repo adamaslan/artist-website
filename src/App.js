@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import dancing from "./dancing.jpg";
+import Navbar from "./Navbar";
 
 const Bordy = styled.img`
   display: flex;
@@ -43,15 +44,16 @@ const Grid = styled.div`
 function App() {
   return (
     <Grid>
-      <Item> 1</Item>
-      <Item>
-        <Sup>Adam Timur Aslan</Sup>
-      </Item>
+      <Navbar />
+      <Item>1</Item>
+      <Item></Item>
       <Item>3</Item>
       <Item>
         <Sup>Art</Sup>
       </Item>
-      <Item>5</Item>
+      <Item>
+        <Sup>Adam Timur Aslan</Sup>
+      </Item>
       <Item>
         <Sup>
           Hey there! I am Adam Aslan. Much of my work is influenced by words.
