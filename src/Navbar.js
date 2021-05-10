@@ -27,7 +27,7 @@ export default Navbar;
 
 const MenuLink = styled.a`
   padding: 1rem 2rem;
-  cursor: pointer;
+  cursor: crosshair;
   text-align: center;
   text-decoration: none;
   color: #67bc98;
@@ -41,14 +41,12 @@ const MenuLink = styled.a`
 const Nav = styled.div`
   padding: 0 2rem;
   display: flex;
+  grid-column: 1 / span 2;
+  grid-row: 1;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 `;
 
 const Logo = styled.a`
